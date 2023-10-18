@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Outfit</title>
+</head>
+<body>
+    <h1>Pemesanan Outfit</h1>
+    <form action="proses_pemesanan.php" method="POST">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+        
+        <label for="alamat">Alamat Pengiriman:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="produk">Pilih Outfit:</label>
+        <select id="produk" name="produk" required>
+            <option value="Outfit 1">Outfit 1 - Rp. 550.000</option>
+            <option value="Outfit 2">Outfit 2 - Rp. 730.000</option>
+            <option value="Outfit 3">Outfit 3 - Rp. 385.000</option>
+            <option value="Outfit 4">Outfit 4 - Rp. 600.000</option>
+            <option value="Outfit 5">Outfit 5 - Rp. 555.000</option>
+            <option value="Outfit 6">Outfit 6 - Rp. 850.000</option>
+            <option value="Outfit 7">Outfit 7 - Rp. 478.000</option>
+            <option value="Outfit 8">Outfit 8 - Rp. 557.000</option>
+            <option value="Outfit 9">Outfit 9 - Rp. 675.000</option>
+            <option value="Outfit 10">Outfit 10 - Rp. 654.000</option>
+        </select><br><br>
+        
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required><br><br>
+        
+        <label for="metode-pembayaran">Pilih Metode Pembayaran:</label>
+        <select id="metode-pembayaran" name="metode-pembayaran" required>
+            <option value="transfer-bank">Transfer Bank</option>
+            <option value="kartu-kredit">Kartu Kredit</option>
+            <!-- Tambahkan metode pembayaran lain jika diperlukan -->
+        </select><br><br>
+        
+        <button type="submit">Pesan Sekarang</button>
+    </form>
+</body>
+</html>
